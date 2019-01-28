@@ -1,0 +1,49 @@
+<link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<!------ Include the above in your HEAD tag ---------->
+
+<div class="container">
+<div class="row justify-content-center">
+                    <div class="col-md-8">
+                        <div class="card">
+                            <div class="card-header">Login</div>
+                            <div class="card-body">
+
+
+                        <form #loginForm="ngForm" class="form-horizontal" (ngSubmit)="login(loginForm)">
+
+                                    <div class="form-group">
+                                        <label for="name" class="cols-sm-2 control-label">Your email</label>
+                                        <div class="cols-sm-10">
+                                            <div class="input-group">
+                                                <span class="input-group-addon"><i class="fa fa-user fa" aria-hidden="true"></i></span>
+                                                <input [(ngModel)]="email" type="text" class="form-control" name="email" id="email" placeholder="Enter your email" />
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="email" class="cols-sm-2 control-label">Your password</label>
+                                        <div class="cols-sm-10">
+                                            <div class="input-group">
+                                                <span class="input-group-addon"><i class="fa fa-envelope fa" aria-hidden="true"></i></span>
+                                                <input [(ngModel)]="password" type="text" class="form-control" name="password" id="password" placeholder="Enter your password" />
+                                            </div>
+                                        </div>
+                                    </div>
+                                   
+                                   
+                                    <div class="form-group ">
+                                        <button  (click)="onLogin()" type="button" class="btn btn-primary btn-lg btn-block login-button">Login</button>
+                                    </div>
+                                    <div class="login-register">
+                                        <a href="/register">Register</a>
+                                    </div>
+                         </form>
+
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+</div>

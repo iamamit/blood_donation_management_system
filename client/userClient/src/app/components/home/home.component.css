@@ -1,0 +1,26 @@
+body
+      {
+          margin-top: 50px;
+          
+          border: 2px groove; 
+          height:100%;
+          width: 100%;
+          background-repeat: no-repeat;
+          background-image: url("home.jpg");
+
+      }
+      .back
+      {
+          text-align: center;
+         height: 500px;
+         width: 1000px; 
+         color: white;
+         font-size:60px;
+         font-family: fantasy
+      }
+      .btn :hover
+      {
+          color: white
+      }
+
+      
